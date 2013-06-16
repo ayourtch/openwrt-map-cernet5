@@ -76,7 +76,6 @@ endef
 
 define Package/map-cernet/install
 	$(INSTALL_DIR) $(1)/sbin
-	$(CP) -r ./files/* $(1)/
 	$(INSTALL_BIN) $(PKG_BUILD_DIR)/ivictl $(1)/sbin/
 endef
 
