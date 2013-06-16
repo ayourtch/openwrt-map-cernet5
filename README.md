@@ -1,3 +1,8 @@
+This is a very early version of the MAP OpenWRT feed.
+This feed adds the support for the MAP transition technology to OpenWRT with
+DHCPv6-based provisioning. The option number is taken arbitrarily and will
+definitely change in the future - so use this just for your own testing!
+
 Here are the steps to add the MAP support to your OpenWRT build:
 
 1. Open the feeds.conf.default in the editor
