@@ -34,7 +34,6 @@ Provides the mdpc utility to generate the CLI for ivictl based on the DHCP param
 endef
 
 define Build/Compile
-	mv $(BUILD_DIR)/
 	$(TARGET_CC) -o $(PKG_BUILD_DIR)/mdpc \
                 $(PKG_BUILD_DIR)/mdpc.c 
 endef
