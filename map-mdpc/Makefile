@@ -11,12 +11,12 @@ PKG_NAME:=map-mdpc
 PKG_VERSION:=00001
 PKG_RELEASE:=00001
 
-PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=https://github.com/ayourtch/mdpc.git
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_VERSION:=902175166a27930ffc998daf0903e26a4b939cd5
+PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION)-$(PKG_SOURCE_VERSION).tar.gz
 PKG_SOURCE_SUBDIR:=$(PKG_NAME)-$(PKG_VERSION)-$(PKG_SOURCE_VERSION)
-PKG_BUILD_DIR:=$(BUILD_DIR)/map-mdpc/mdpc-$(PKG_SOURCE_VERSION)
+PKG_BUILD_DIR:=$(BUILD_DIR)/map-mdpc/$(PKG_NAME)-$(PKG_VERSION)-$(PKG_SOURCE_VERSION)
 
 include $(INCLUDE_DIR)/package.mk
 
@@ -34,6 +34,7 @@ Provides the mdpc utility to generate the CLI for ivictl based on the DHCP param
 endef
 
 define Build/Compile
+	mv $(BUILD_DIR)/
 	$(TARGET_CC) -o $(PKG_BUILD_DIR)/mdpc \
                 $(PKG_BUILD_DIR)/mdpc.c 
 endef
