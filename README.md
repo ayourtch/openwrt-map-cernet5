@@ -19,7 +19,7 @@ Then to build the OpenWRT with MAP support:
 Runtime configuration:
 
 1. Configure a given interface as "DHCPv6 client"
-2. Edit the /etc/config/network and add the line "options reqopts '48879'" under the interface that is configured for DHCPv6 client
+2. Edit the /etc/config/network and add the line "option reqopts '48879'" under the interface that is configured for DHCPv6 client
 
 After the DHCP lease happens, the log is in the /tmp/map.log on the OpenWRT CPE.
 
