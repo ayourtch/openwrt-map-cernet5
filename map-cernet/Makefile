@@ -9,7 +9,8 @@ include $(TOPDIR)/rules.mk
 include $(INCLUDE_DIR)/kernel.mk
 
 PKG_NAME:=cernet-MAP
-PKG_VERSION:=0gitdaa185ae8d7
+# PKG_VERSION:=0gitdaa185ae8d7
+PKG_VERSION:=0git6187abf3
 # PKG_RELEASE:=0git7da23ab82f
 
 # PKG_SOURCE:=master.zip
@@ -17,9 +18,9 @@ PKG_VERSION:=0gitdaa185ae8d7
 # PKG_SOURCE_URL:=https://github.com/cernet/MAP/archive/
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
-PKG_SOURCE_URL:=https://github.com/cernet/MAP.git
+PKG_SOURCE_URL:=https://github.com/akozadaev/MAP.git
 PKG_SOURCE_PROTO:=git
-PKG_SOURCE_VERSION:=9ff5a4c2091c61ff3fa57b0a66149daa185ae8d7
+PKG_SOURCE_VERSION:=54c1a8a5a0a453bfd925f9f1304ee67d6187abf3
 PKG_SOURCE_SUBDIR:=$(PKG_NAME)-$(PKG_VERSION)
 
 
