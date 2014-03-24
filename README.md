@@ -6,7 +6,7 @@ definitely change in the future - so use this just for your own testing!
 Here are the steps to add the MAP support to your OpenWRT build:
 
 1. Open the feeds.conf.default in the editor
-2. Add the line: "src-git openwrt_map https://github.com/ayourtch/openwrt-map.git"
+2. Add the line: "src-git openwrt_map https://github.com/ayourtch/openwrt-map-cernet5.git"
 3. ./scripts/feeds update -a
 4. ./scripts/feeds install -a -p openwrt_map
 
